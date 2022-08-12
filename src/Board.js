@@ -8,7 +8,7 @@ import NegativeX from './components/tracks/NegativeX'
 
 export default function Board() {
   return (
-    <div className='' style={{maxWidth: '750px'}}>
+    <div className='mx-auto' style={{maxWidth: '750px'}}>
       <div className='row d-flex justify-content-center' >
         <PawnYard />
         <PositiveY />

@@ -15,6 +15,10 @@ export default function Yard() {
         {/* BOTTOM RIGHT */}
           <div className=' rounded-circle bg-success' style={{ height: `${pawnHomeHolderGridHeight}px`, width: `${pawnHomeHoldeGridrWidth}px`, position:'absolute', bottom: `${pawnHolderGridBottomOffset}px`, right: `${pawnHolderGridRightOffset}px` }}></div>
       </div>
+      <div className='position-relative'>
+        <img className='position-absolute transition-1 transition-2 transition-3 transition-4 transition-5' src='https://bit.ly/3PjjZGr' style={{ width: '110px', bottom: '-15px', right: '25px' }} />
+      </div>
+     
     </div>
   )
 }
