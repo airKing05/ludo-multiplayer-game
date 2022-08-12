@@ -32,3 +32,26 @@
   border-bottom: 75px solid transparent;
 }
 /* PawnsPort */
+
+/* Pawns transition */
+.transition-1{
+  transition: width 1s,
+    height 1s,
+    transform 1s;
+}
+.transition-1{
+  transform: translate(115px, 30px);
+}
+.transition-2{
+  transform: translate(115px, -180px);
+}
+.transition-3:hover {
+  transform: translate(68px, -225px);
+}
+/* .transition-4 {
+  transform: translate(-182px, -225px);
+} */
+/* .transition-5:hover {
+  transform: translate(-130px, -275px);
+} */
+/* Pawns transition */

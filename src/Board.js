@@ -6,7 +6,7 @@ import VerticalTrack from './components/tracks/Vertical'
 
 export default function Board() {
   return (
-    <div className='' style={{maxWidth: '750px'}}>
+    <div className='mx-auto' style={{maxWidth: '750px'}}>
       <div className='row d-flex justify-content-center' >
         <PawnYard />
         <VerticalTrack />
