@@ -1,25 +1,27 @@
 import React from 'react'
 import PawnYard from './components/pawns/Yard'
 import PawnHome from './components/pawns/Home'
-import HorizontalTrack from './components/tracks/Horizontal'
-import VerticalTrack from './components/tracks/Vertical'
+import PositiveY from './components/tracks/PositiveY';
+import NegativeY from './components/tracks/NegativeY';
+import PositiveX from './components/tracks/PositiveX';
+import NegativeX from './components/tracks/NegativeX'
 
 export default function Board() {
   return (
     <div className='' style={{maxWidth: '750px'}}>
       <div className='row d-flex justify-content-center' >
         <PawnYard />
-        <VerticalTrack />
+        <PositiveY />
         <PawnYard />
       </div>
       <div className='row d-flex justify-content-center' >
-        <HorizontalTrack />
+        <NegativeX />
         <PawnHome />
-        <HorizontalTrack />
+        <PositiveX />
       </div>
       <div className='row d-flex justify-content-center' >
         <PawnYard />
-        <VerticalTrack />
+        <NegativeY />
         <PawnYard />
       </div>
     </div>
