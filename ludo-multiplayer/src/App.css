@@ -2,37 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* PawnsPort */
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 150px solid yellow;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-left: 150px solid green;
+  border-bottom: 150px solid transparent;
 }
-
-.App-link {
-  color: #61dafb;
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-right: 150px solid #6f42c1;
+  border-bottom: 150px solid transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* PawnsPort */

@@ -1,9 +1,10 @@
 import './App.css';
+import PlayBoard from './PlayBoard';
 
 function App() {
   return (
     <div className="App">
-     react multiplayer 
+    <PlayBoard/>
     </div>
   );
 }
