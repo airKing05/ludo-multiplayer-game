@@ -1,5 +1,5 @@
 import './App.css';
-import PlayBoard from './PlayBoard';
+import PlayBoard from './Board';
 
 function App() {
   return (
