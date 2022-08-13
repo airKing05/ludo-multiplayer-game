@@ -17,13 +17,13 @@ export default function Board() {
 
   const getColor = (rowIndex, colIndex, axis) => {
     if(axis === '+x') {
-      if ((rowIndex == 0 && colIndex <=6) || (rowIndex == -1 && colIndex == 6)) return axisColorMapping[axis];
+      if ((rowIndex === 0 && colIndex <=6) || (rowIndex === -1 && colIndex === 6)) return axisColorMapping[axis];
     } else if (axis === '-x') {
-      if ((rowIndex == 0 && colIndex >= -6) || (rowIndex == 1 && colIndex == -6)) return axisColorMapping[axis];
+      if ((rowIndex === 0 && colIndex >= -6) || (rowIndex === 1 && colIndex === -6)) return axisColorMapping[axis];
     } else if (axis === '+y') {
-      if ((colIndex == 0 && rowIndex <=6) || (rowIndex == 6 && colIndex == 1)) return axisColorMapping[axis];
+      if ((colIndex === 0 && rowIndex <=6) || (rowIndex === 6 && colIndex === 1)) return axisColorMapping[axis];
     } else if (axis === '-y') {
-      if ((colIndex == 0 && rowIndex >= -6) || (rowIndex == -6 && colIndex == -1)) return axisColorMapping[axis];
+      if ((colIndex === 0 && rowIndex >= -6) || (rowIndex === -6 && colIndex === -1)) return axisColorMapping[axis];
     }   
   }
 
