@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Yard() {
   const [pawnHomeHoldeGridrWidth, pawnHomeHolderGridHeight] = [50, 50];
   const [pawnHolderGridLeftOffset,  pawnHolderGridRightOffset,  pawnHolderGridTopOffset,  pawnHolderGridBottomOffset] = new Array(4).fill(20);
@@ -19,6 +20,9 @@ export default function Yard() {
         <img className='position-absolute transition-1 transition-2 transition-3 transition-4 transition-5' src='https://bit.ly/3PjjZGr' style={{ width: '110px', bottom: '-15px', right: '25px' }} />
       </div>
      
+     <section>
+     
+     </section>
     </div>
   )
 }

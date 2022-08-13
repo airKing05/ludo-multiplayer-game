@@ -1,0 +1,30 @@
+.dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: rgb(223, 79, 79);
+    z-index: 1;
+    position: relative;
+    top: 150px;
+    
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0) rotateX(45deg) rotateZ(45deg);
+    }
+
+    to {
+        transform: rotateY(360deg) rotateX(45deg) rotateZ(45deg);
+    }
+}
+
+.dice {
+    animation: rotate 5s linear infinite;
+}
+.dice:hover{
+    /* transform: skew(20deg); */
+    transform: rotateY(360deg) rotateX(45deg) rotateZ(45deg);
+    animation: rotate 10s linear infinite;
+}
