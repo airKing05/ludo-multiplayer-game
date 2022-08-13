@@ -7,12 +7,13 @@ import PositiveX from './components/tracks/PositiveX';
 import NegativeX from './components/tracks/NegativeX'
 
 export default function Board() {
+  const [colorGreen, colorYellow, colorRed, colorPurple] = ['green', 'yellow', 'red', '#6f42c1']
   return (
     <div className='' style={{maxWidth: '750px'}}>
       <div className='row d-flex justify-content-center' >
-        <PawnYard />
+        <PawnYard bgColor={colorGreen} />
         <PositiveY />
-        <PawnYard />
+        <PawnYard bgColor={colorYellow} />
       </div>
       <div className='row d-flex justify-content-center' >
         <NegativeX />
@@ -20,9 +21,9 @@ export default function Board() {
         <PositiveX />
       </div>
       <div className='row d-flex justify-content-center' >
-        <PawnYard />
+        <PawnYard bgColor={colorRed} />
         <NegativeY />
-        <PawnYard />
+        <PawnYard bgColor={colorPurple} />
       </div>
     </div>
   )

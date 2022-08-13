@@ -32,3 +32,20 @@
   border-bottom: 75px solid transparent;
 }
 /* PawnsPort */
+
+
+/* Dynamic Classes */
+.colorRed{
+  background-color: red;
+}
+.colorGreen {
+  background-color: green;
+}
+.colorYellow {
+  background-color: yellow;
+}
+.colorPurple{
+  background-color: #6f42c1;
+}
+
+/* Dynamic Classes */
