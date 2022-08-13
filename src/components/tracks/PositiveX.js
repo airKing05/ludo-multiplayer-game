@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PositiveX() {
+export default function PositiveX(props) {
 
     const trackGridWidth = 50;
     const trackGridHeight = 50;
@@ -21,12 +21,7 @@ export default function PositiveX() {
                         <div className='row'>
                             {
                                 XDirectionPositions.map((colIndex) => {
-                                    if(rowIndex== -1 & colIndex == 6){
-                                        return (<div className='col-2 border colorPurple' style={{ width: `${trackGridWidth}px`, height: `${trackGridHeight}px`, fontSize: '10px' }}>{colIndex}, {rowIndex}</div>)
-                                    } else if (rowIndex == 0 & colIndex < 7){
-                                        return (<div className='col-2 border colorPurple' style={{ width: `${trackGridWidth}px`, height: `${trackGridHeight}px`, fontSize: '10px' }}>{colIndex}, {rowIndex}</div>)
-                                    }
-                                    return (<div className='col-2 border' style={{ width: `${trackGridWidth}px`,height: `${trackGridHeight}px`, fontSize:'10px' }}>{colIndex}, {rowIndex}</div>)
+                                    return (<div className='col-2 border' style={{ width: `${trackGridWidth}px`,height: `${trackGridHeight}px`, fontSize:'10px', background: props.getColor(rowIndex, colIndex, '+x')}}>{colIndex}, {rowIndex}</div>)
                                 })
                             }
                         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NegativeY() {
+export default function NegativeY(props) {
 
     const trackGridWidth = 50;
     const trackGridHeight = 50;
@@ -23,12 +23,7 @@ export default function NegativeY() {
                             {
                                
                                 XDirectionPositions.map((colIndex) => {
-                                    if (rowIndex == -6 & colIndex== -1) {
-                                        return (<div className='col-2 border colorRed' style={{ width: `${trackGridWidth}px`, height: `${trackGridHeight}px`, fontSize: '10px' }}>{colIndex}, {rowIndex}</div>)
-                                    } else if (rowIndex > -7 & colIndex == 0){
-                                        return (<div className='col-2 border colorRed' style={{ width: `${trackGridWidth}px`, height: `${trackGridHeight}px`, fontSize: '10px' }}>{colIndex}, {rowIndex}</div>)
-                                    }
-                                    return (<div className='col-2 border abcd' style={{ width: `${trackGridWidth}px`,height: `${trackGridHeight}px`, fontSize:'10px' }}>{colIndex}, {rowIndex}</div>)
+                                    return (<div className='col-2 border abcd' style={{ width: `${trackGridWidth}px`,height: `${trackGridHeight}px`, fontSize:'10px', background: props.getColor(rowIndex, colIndex, '-y') }}>{colIndex}, {rowIndex}</div>)
                                 })
                             }
                         </div>
